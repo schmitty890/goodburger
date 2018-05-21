@@ -36,7 +36,7 @@ var orm = {
     // connect to mysql with that query, callback results if no error
     connection.query(queryString, [idToUpdate], function(err, result) {
       if (err) throw err;
-      callback(result); 
+      callback(result);
     });
   }
 };
