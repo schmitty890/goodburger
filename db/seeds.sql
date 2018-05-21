@@ -1,8 +1,7 @@
-USE burgers_db;
-
--- populate table with 3 default burgers and display table
-INSERT INTO burgers (burger_name, date)
+USE burger_db;
+-- default burgers
+INSERT INTO burgers (burger_name)
 	VALUES
-		("cheeseburger", NOW()),
-		("bacon cheeseburger", NOW()),
-		("hamburger", NOW());
+		("cheeseburger");
+		("bacon cheeseburger");
+		("hamburger");
