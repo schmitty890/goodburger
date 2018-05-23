@@ -15,7 +15,7 @@ var burger = {
   },
   // call the update method
   updateOne: function(id, cb) {
-  orm.updateOne(id, cb);
+    orm.updateOne(id, cb);
   }
 };
 
