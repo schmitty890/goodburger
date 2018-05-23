@@ -10,12 +10,12 @@ app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: true}));
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }))
-app.set("view engine", "handlebars")
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
-var routes = require ("./controllers/burgers_controller.js")
+var routes = require ("./controllers/burgers_controller.js");
 
-app.use("/", routes)
+app.use("/", routes);
 
 // start the server
 app.listen(PORT, function() {
