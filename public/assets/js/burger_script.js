@@ -26,7 +26,8 @@
     // save new burger name in var. not saving devoured as false due to database
     // being set up as default false
     var newBurger = {
-      burger_name: $("#new-burger-input").val().trim()
+      burger_name: $("#new-burger-input").val().trim(),
+      created_at: moment().format("YYYY-MM-DD HH:mm:ss")
     };
     // ajax call with post method with new burger data above
     $.ajax("/burgers/new", {
