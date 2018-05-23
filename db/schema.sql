@@ -5,9 +5,9 @@ USE burger_db;
 
 -- create burgers table with id/primary key, burger name, devoured (default to false), and a timestamp
 CREATE TABLE burgers (
-	id INT AUTO_INCREMENT NOT NULL,
-	burger_name VARCHAR(255) NOT NULL,
-	devoured BOOLEAN DEFAULT false,
-	createdAt TIMESTAMP default CURRENT_TIMESTAMP,
-	PRIMARY KEY(id)
+  id INT AUTO_INCREMENT NOT NULL,
+  burger_name VARCHAR(255) NOT NULL,
+  devoured BOOLEAN DEFAULT false,
+  createdAt TIMESTAMP default CURRENT_TIMESTAMP,
+  PRIMARY KEY(id)
 );
